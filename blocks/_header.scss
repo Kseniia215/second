@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    header{
+        height: 900px;
+        background-color: black;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0px;
+        .header_head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header_nav{
+                .header_a{
+                    margin-right: 70px;
+                    text-decoration: none;
+                    @include text(30px, normal);
+                }
+                .header_a:hover{
+                    color:#8D2C62;
+                }
+                .header_login{
+                    border-radius: 12px;
+                    padding: 2px 15px;
+                    font-size: 24px;
+                    font-family: "Poppins";
+                    margin-right: 20px;
+                }
+                .header_login:hover{
+                    color: #8D2C62;
+                }
+            }
+        }
+        .header_body{
+            display: flex;
+            position: relative;
+            margin-top: 100px;
+            .header_slogan{
+                width: 607px;
+                margin-top: 150px;
+                .header_p{
+                    @include text(35px, normal);
+                }
+                .header_button{
+                    @extend %button;
+                }
+            }
+            .header_img3{
+                position: absolute;
+                left: 840px;
+                top:-100px;
+            }
+            .header_img1{
+                position: absolute;
+                left: 800px;
+                top: 50px;
+            }
+            .header_img2{
+                position: absolute;
+                left: 700px;
+                top: -95px;
+                
+            }
+            
+        
+        }
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    footer{
+        background-color: #000;
+        padding-top: 150px;
+        .footer_all{
+            margin: 0 auto;
+            width: 1240px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            .footer_logo{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 500px;
+                .footer_p{
+                    @include text(24px, bold);
+                }
+            }
+            .footer_column{
+                display: flex;
+                flex-direction: row;
+                .footer_t{
+                    @include text(18px, normal);
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

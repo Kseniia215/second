@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    // width: 1440px;
+    .block_one{
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .block_one_bg{
+            position: absolute;
+            right: 1300px;
+        }
+        .block_one_search{
+            display: flex;
+            flex-direction: column;
+            .block_one_form{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                color: #000;
+                border: 1px solid #981C82;
+                border-radius: 40px;
+                padding: 15px 20px;
+                .block_one_ph{
+                    background-color: #000;
+                    border: none;
+                    font-size: 18px;
+                }
+                .block_one_submit{
+                    background-color: #981C82;
+                    border: none;
+                    color: #fff;
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .block_one_grid{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(3, auto);
+            justify-items: center;
+            gap: 20px;
+            .block_one_gr1{
+                grid-column-start:span 2;
+            }
+            .block_one_gr2{
+                grid-column-start: span 3;
+            }
+        }
+        .block_one_button{
+            @extend %button;
+        }
+        .block_one_grid2{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            justify-items: start;
+            gap: 15px;
+            .block_one_gr2_1{
+                grid-row-start:span 2;
+            }
+            .block_one_gr2_2{
+                @include text(30px, bold);
+                width: 644px;
+            }
+            .block_one_grid2_3{
+                .block_one_button{
+                    margin: 0;
+                    margin-right: 15px;
+                }
+                .block_one_gr2_4{
+                    @include text(22px, bold);
+                    display: inline;
+                }
+            }
+
+        }
+    }
+}

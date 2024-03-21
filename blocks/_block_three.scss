@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    .block_three{
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .block_three_h1{
+            @extend %title;
+            padding-top: 150px;
+        }
+        .block_three_p{
+            @include text(36px, normal);
+            margin-top: 100px;
+            width: 1100px;
+        }
+        .block_three_bg{
+            position: absolute;
+            right: 1300px;
+            top: 100px;
+        }
+        .block_three_cards{
+            margin-top: 100px;
+            .block_three_img_button{
+                width: 412px;
+                height: 566px;
+                background-color: #000;
+                background-size: cover;
+                border: none;
+                margin-right: 20px;
+                &:hover{
+                    transform: scale(1.10);
+                }
+            }
+        }
+    }
+}

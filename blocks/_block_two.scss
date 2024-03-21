@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    // width: 1440px;
+    .block_two{
+        background-color: #000;
+        position: relative;
+        .block_two_h1{
+            @extend %title;
+            padding-top: 150px; 
+        }
+        .block_two_line1{
+            width: 1540px;
+            height: 450px;
+        }
+        .block_two_line2{
+            position: absolute;
+            right: 0px;
+            bottom: -20px;
+            width: 1540px;
+            height: 450px;
+        }
+    }
+}
